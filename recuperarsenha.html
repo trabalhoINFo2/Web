@@ -1,17 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <title> Interface login </title>
-    <link rel="stylesheet" type="text/css" href="login.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="csrf-token" content="EJ6Pm48oapJet944ljQ6ONhVhtbjYwJ10jz4QyEU">
+    <title>Meg Artes | Resetar Senha</title>
+    <meta name="description" content="">
+    <meta name="author" content="Meg Artes">
+
+
+    <!-- Check if the language is set to RTL, so apply the RTL layouts -->
+    <!-- Otherwise apply the normal LTR layouts -->
+    <link media="all" type="text/css" rel="stylesheet" href="https://studio360tour.com/css/frontend.css?id=06d9910e634fc12cdfab">
+
+
 </head>
 
 <body>
-    <h1>
-        Ops! Ainda estamos trabalhando nisso!!!
-        <p>
-            Desde já agradeço.
-        </p>
-    </h1>
+
+    <div id="app">
+
+        <!-- <div class="container"> -->
+        <div id="reset">
+            <div class="container">
+                <img src="img/MegArtes.png" alt="" class="logointernal">
+                <form method="POST" action="https://studio360tour.com/password/email"><input type="hidden" name="_token" value="EJ6Pm48oapJet944ljQ6ONhVhtbjYwJ10jz4QyEU">
+                    <div class="form__content">
+                        <div class="form__head">
+                            <h1 class="form__title">Resetar Senha</h1>
+                            <p class="form__subtitle">Insira seu e-mail abaixo para recuperar sua senha</p>
+                        </div>
+                        <div class="form__body">
+
+                            <div class="form-group">
+                                <span class="form__icon"><i class="material-icons">mail_outline</i></span>
+                                <div class="input-field s12">
+                                    <input class="form-control validate form__input" type="email" name="email" id="email" maxlength="191" required>
+                                    <label for="email">Endereço de e-mail</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group clearfix">
+                                <button class="btn btn-success btn-sm pull-right form__btn" type="submit">Enviar link para redefinição de senha</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <p class="form__linkRegister">É novo por aqui? <a href="https://studio360tour.com/cadastro">Cadastre-se gratuitamente!</a></p>
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+    <!-- #app -->
+
+    <!-- Scripts -->
+    <script src="https://studio360tour.com/js/manifest.js?id=d91051ea7d0c9bd1981e"></script>
+
+    <script src="https://studio360tour.com/js/vendor.js?id=151bc0ffc11e7b62a77b"></script>
+
+    <script src="https://studio360tour.com/js/frontend.js?id=09c8a1b6533ce0c0946d"></script>
+
+
 </body>
+
+</html>
