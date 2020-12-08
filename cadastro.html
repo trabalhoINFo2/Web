@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="csrf-token" content="ygMivOsXWfIhqErWosYOq4ElnHFGRYrilhIn5oGF">
+    <title>Meg Artes | Cadastro</title>
+    <meta name="description" content="">
+    <meta name="author" content="MegArtes">
+
+
+    <link media="all" type="text/css" rel="stylesheet" href="https://studio360tour.com/css/cadastro.css?id=4ac0cb8b91924e61d0fb">
+
+
+    <!--<base href=link da pagina principoal-->>
+    <base href="" />
+    <!--fim comentario-->
+</head>
+
+<body>
+
+    <div id="app">
+        <header>
+            <div class="container">
+                <a href="index.html">
+                    <img src="img/meg.png" alt="">
+                </a>
+                <a href="index.html">
+                    <button class="btn-flat go-back">
+                <i class="material-icons">close</i>
+            </button>
+                </a>
+
+            </div>
+        </header>
+        <section class="cadastro">
+
+            <div class="container">
+                <h2 class="title center-align">Faça parte de nossa comunidade</h2>
+                <p class="description center-align">Ao realizar o cadastro, você passa a usufruir de alguns benefícios como promoções exclusivas para cadastrados em nossa comunidade. Para isso, basta preencher os campos abaixo.</p>
+                <form id="cadastroForm" role="cadastroForm" autocomplete="nope" action="https://studio360tour.com/cadastro/salvarCadastro" method="POST" enctype="multipart/form-data" autocomplete="off">
+                    <input type="hidden" name="_token" value="ygMivOsXWfIhqErWosYOq4ElnHFGRYrilhIn5oGF">
+
+
+
+                    <div id="usuarios" class="step">
+
+                        <div class="row">
+                            <div class="col s12">
+                                <h3>Dados Gerais</h3>
+                            </div>
+                        </div>
+
+                        <div class="imobiliaria">
+                            <div class="row">
+                                <div class="input-field col s12 m6 l4">
+                                    <h5>Tamanho: <b>400 x 400 px</b></h5>
+                                    <div class="user-image">
+                                        <input type="file" name="user-image" />
+                                    </div>
+                                </div>
+
+                                <div class="input-field col s12 m6 l4">
+                                    <input id="first_name" type="text" name="first_name" value="">
+                                    <label for="first_name">Nome *</label>
+                                    <span class="helper-text"></span>
+                                </div>
+
+                                <div class="input-field col s12 m6 l4">
+                                    <input id="last_name" type="text" name="last_name" value="">
+                                    <label for="last_name">Sobrenome *</label>
+                                    <span class="helper-text"></span>
+                                </div>
+
+                                <div class="input-field col s12 m6 l8">
+                                    <input id="email" type="text" name="email" value="" autocomplete="off">
+                                    <label for="email">E-mail *</label>
+                                    <span class="helper-text"></span>
+                                </div>
+                                <div class="input-field col s12 m6 l4">
+                                    <input id="password" type="password" name="password" value="">
+                                    <label for="password">Senha *</label>
+                                    <span class="helper-text"></span>
+                                </div>
+                                <div class="input-field col s12 m6 l4">
+                                    <input id="password_confirmation" type="password" name="password_confirmation" value="">
+                                    <label for="password_confirmation">Confirmar Senha *</label>
+                                    <span class="helper-text"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12 m6 l4">
+                                    <input id="creci" type="text" name="creci" value="">
+                                    <label for="creci">Idade *</label>
+                                    <span class="helper-text"></span>
+                                </div>
+
+                                <div class="input-field col s12 m6 l4">
+                                    <input id="cpf" type="text" name="cpf" value="">
+                                    <label for="cpf">CPF*</label>
+                                    <span class="helper-text"></span>
+                                </div>
+
+                                <div class="input-field col s12 m6 l4">
+                                    <input id="telefone" type="tel" name="telefone" value="">
+                                    <label for="telefone">Celular/Telefone*</label>
+                                    <span class="helper-text"></span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="endereco" class="step">
+
+                        <div class="row">
+                            <div class="col s12">
+                                <h3>Endereço</h3>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="input-field col s5">
+                                <select id="estado" name="estado_id" class="no-autoinit select2 select-wrapper">
+                                <option value="">Estado</option>
+                                <!--tudos os etados estao preenchidos, para ativalos basta remover os preechimentos de comentário-->
+                                <!--option value="1">Acre</option-->
+                                                                                                                                                <!--option value="2">Alagoas</option-->
+                                                                                                                                                <!--option value="3">Amapá</option-->
+                                                                                                                                                <!--option value="4">Amazonas</option-->
+                                                                                                                                                <!--option value="5">Bahia</option-->
+                                                                                                                                                <!--option value="6">Ceará</option-->
+                                                                                                                                                <!--option value="7">Distrito Federal</option-->
+                                                                                                                                                <!--option value="8">Espírito Santo</option-->
+                                                                                                                                                <!--option value="9">Goiás</option-->
+                                                                                                                                                <!--option value="10">Maranhão</option-->
+                                                                                                                                                <!--option value="11">Mato Grosso</option-->
+                                                                                                                                                <!--option value="12">Mato Grosso do Sul</option-->
+                                                                                                                                                <option value="13">Minas Gerais</option>
+                                                                                                                                                <!--option value="14">Pará</option-->
+                                                                                                                                                <!--option value="15">Paraíba</option-->
+                                                                                                                                                <!--option value="16">Paraná</option-->
+                                                                                                                                                <!--option value="17">Pernambuco</option-->
+                                                                                                                                                <!--option value="18">Piauí</option-->
+                                                                                                                                                <!--option value="19">Rio de Janeiro</option-->
+                                                                                                                                                <!--option value="20">Rio Grande do norte</option-->
+                                                                                                                                                <!--option value="21">Rio Grande do Sul</option-->
+                                                                                                                                                <!--option value="22">Rondônia</option-->
+                                                                                                                                                <!--option value="23">Roraima</option-->
+                                                                                                                                                <!--option value="24">Santa Catarina</option-->
+                                                                                                                                                <!--option value="25">São Paulo</option-->
+                                                                                                                                                <!--option value="26">Sergipe</option-->
+                                                                                                                                                <!--option value="27">Tocantins</option-->
+                                                                                                </select>
+                                <span class="helper-text"></span>
+                            </div>
+                            <div class="input-field col s7">
+                                <select id="cidade" name="cidade_id" class="no-autoinit select2 select-wrapper" data-cidade="">
+                                <option value="">Cidade</option>
+                                |    
+                                <option value="1">Ipatinga</option>
+                                |
+                                <option value="2">Cel. Fabriciano</option>
+                                |
+                                <option value="3">Timóteo</option>
+                            </select>
+                                <span class="helper-text"></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="tipo" class="step">
+                        <div class="row">
+                            <div class="col s12">
+                                <p>Você prefere buscar ou receber o produto?</p>
+                            </div>
+                        </div>
+                        <div class="radio-button-group row">
+                            <div class="radio-button col s12 m6 l6">
+                                <input type="radio" class="hidden" name="tipo" id="tipo_imob" value="ci">
+                                <label class="btn" for="tipo_imob">Receber</label>
+                                <span class="helper-text"></span>
+                            </div>
+
+                            <div class="radio-button  col s12 m6 l6">
+                                <input type="radio" class="hidden" name="tipo" id="tipo_corretor" value="ca">
+                                <label class="btn" for="tipo_corretor">Buscar</label>
+                                <span class="helper-text"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="imobiliaria" class="step hide">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="imobiliaria" type="text" name="imobiliaria" value="">
+                                <label for="imobiliaria">Bairro/Rua/numero</label>
+                                <span class="helper-text"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <button id="button-salvar" class="btn waves-effect waves-light right" type="submit">Finalizar cadastro</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </div>
+    <!-- #app -->
+
+    <!-- Scripts -->
+    <script src="https://studio360tour.com/js/manifest.js?id=d91051ea7d0c9bd1981e"></script>
+
+    <script src="https://studio360tour.com/js/vendor.js?id=151bc0ffc11e7b62a77b"></script>
+
+    <script src="https://studio360tour.com/js/cadastro.js?id=7c07de15cd0d9bc89a28"></script>
+
+    <script>
+        $(document).ready(function($) {
+
+            $.validator.setDefaults({
+                errorClass: 'invalid',
+                validClass: "valid",
+                errorPlacement: function(error, element) {
+                    $(element)
+                        .closest("div")
+                        .find("span.helper-text")
+                        .attr('data-error', error.text());
+                }
+            });
+
+            $("#cadastroForm").validate({
+                ignore: [],
+                rules: {
+                    first_name: {
+                        required: true
+                    },
+                    last_name: {
+                        required: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    password: {
+                        required: true,
+                        minlength: 5
+                    },
+                    password_confirmation: {
+                        required: true,
+                        minlength: 5,
+                        equalTo: "#password"
+                    },
+                    creci: {
+                        required: true
+                    },
+                    cpf: {
+                        required: true,
+                        cpf: true
+                    },
+                    telefone: {
+                        required: true
+                    },
+                    estado_id: {
+                        required: true
+                    },
+                    cidade_id: {
+                        required: true
+                    },
+                    tipo: {
+                        required: true
+                    },
+                },
+                messages: {
+                    first_name: {
+                        required: 'Informe o nome.'
+                    },
+                    last_name: {
+                        required: 'Informe o sobrenome.'
+                    },
+                    email: {
+                        required: 'Informe o e-mail',
+                        email: 'Informe um e-mail válido.'
+                    },
+                    password: {
+                        required: 'Informe a senha',
+                        minlength: 'A senha deve conter pelo menos 5 digítos.'
+                    },
+                    password_confirmation: {
+                        required: 'Informe a confirmação de senha',
+                        equalTo: 'Senha não confere!',
+                        minlength: 'A senha deve conter pelo menos 5 digítos.'
+                    },
+                    creci: {
+                        required: 'O creci é obrigatório.'
+                    },
+                    cpf: {
+                        required: 'O cpf do responsável é obrigatório.',
+                        cpf: 'cpf inválido.'
+                    },
+                    telefone: {
+                        required: 'Informe o telefone.'
+                    },
+                    estado_id: {
+                        required: 'O estado é obrigatório.'
+                    },
+                    cidade_id: {
+                        required: 'A cidade é obrigatória.'
+                    },
+                    tipo: {
+                        required: 'Informe sua atuação.'
+                    },
+                }
+            });
+
+            $('input[type=radio][name=tipo]').change(function() {
+                if ($(this).val() == 'ci') {
+                    $("#imobiliaria").removeClass('hide');
+                } else {
+                    $("#imobiliaria").addClass('hide');
+                }
+            });
+
+        });
+    </script>
+
+
+</body>
+
+</html>

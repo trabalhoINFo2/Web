@@ -1,0 +1,306 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp');
+@import './fonts';
+$font-stack: 'sansation';
+$input-border-color: #546371 !default;
+$input-success-color:#431077 !default;
+$input-focus-color: #431077 !default;
+$button-large-height: 50px !default;
+$button-raised-background: #32b8c9 !default;
+$sidenav-width: 105px;
+$navbar-height: 60px;
+$primary-color:#431077;
+$secondary-color:#431077;
+@import "~materialize-css/sass/materialize";
+// Import styles
+@import "~select2/src/scss/core";
+// Import styles
+@import "../slim.css";
+* {
+    outline: none;
+}
+
+body,
+html {
+    background-image: linear-gradient(170deg, #fff, #f6f6f8);
+    padding: 0;
+    margin: 0;
+    font-family: 'sansation';
+}
+
+.alert {
+    padding: 10px;
+    position: relative;
+    border-radius: 6px;
+    p {
+        i {
+            margin-right: 10px;
+        }
+        margin: 0px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        line-height: 40px;
+    }
+    button {
+        position: absolute;
+        right: 0px;
+        i {
+            color: #431077;
+            opacity: 0.5;
+        }
+    }
+}
+
+.alert-danger {
+    background-color: rgba(255, 116, 77, 0.1);
+    color: #ff744d;
+}
+
+.alert-success {
+    background-color: rgba(93, 219, 235, 0.1);
+    color: #1a9fb0;
+}
+
+.materialIcons {
+    direction: ltr;
+    display: inline-block;
+    font-family: 'Material Icons';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 1;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    color: #55228a;
+}
+
+.materialIconsOutlined {
+    font-family: 'Material Icons Outlined';
+    direction: ltr;
+    display: inline-block;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 1;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    color: #55228a;
+}
+
+.select2-container {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    vertical-align: middle
+}
+
+.select2 {
+    width: 100% !important;
+    margin-top: 10px;
+    .select2-selection {
+        background-color: transparent!important;
+        border: 0;
+        border-bottom: $input-border;
+        border-radius: 0;
+        height: 40px;
+        .select2-selection__rendered {
+            padding-left: 0;
+            color: #546371;
+        }
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 45px;
+    z-index: 20;
+    background: 0 0;
+    box-shadow: 0 15px 40px 0 transparent;
+    transition: all .4s;
+    &.menu-fixed {
+        box-shadow: 0 15px 40px 0 rgba(36, 62, 101, .21);
+        background: #427bbc;
+        padding: 20px 0;
+        transition: all .4s;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .go-back {
+            color: #fff;
+            i {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+section.cadastro {
+    background-color: #431077;
+    .container {
+        border-radius: 9px;
+        box-shadow: 0 10px 22px 0 rgba(0, 0, 0, .15);
+        background-color: #fff;
+        padding: 42px 41px;
+        .title {
+            font-size: 2em;
+            margin: 0;
+            text-align: center;
+            color: #23292e;
+            font-family: 'sansationbold';
+        }
+        .description {
+            margin: 0;
+            text-align: center;
+            color: #23292e;
+            font-size: 1em;
+            margin-top: 1em;
+        }
+        h3 {
+            margin: 15px 0;
+            font-size: 18px;
+            font-family: 'sansationbold';
+            span {
+                float: right;
+                font-size: 14px;
+                font-family: 'sansationregular';
+            }
+        }
+        h4 {
+            margin: 0px;
+            font-size: 16px;
+            margin-top: 30px;
+        }
+        .step {
+            margin-left: 0;
+            padding-left: 5%;
+            position: relative;
+            border-left: 1px solid #6d30ab;
+            width: 100%;
+            padding-bottom: 20px;
+            h5 {
+                font-size: 16px;
+                color: #23292e;
+                font-family: 'sansation';
+                b {
+                    float: right;
+                    font-size: 12px;
+                    font-family: 'sansationbold';
+                }
+            }
+            &#dados-gerais {
+                margin-top: 40px;
+                &:before {
+                    @extend .materialIcons;
+                    content: 'description';
+                }
+            }
+            &#usuarios {
+                h5 {
+                    font-size: 16px;
+                    color: #23292e;
+                    font-family: 'sansation';
+                    b {
+                        float: right;
+                        font-size: 12px;
+                        font-family: 'sansationbold';
+                    }
+                }
+                &:before {
+                    @extend .materialIcons;
+                    content: 'lock';
+                }
+            }
+            &#endereco {
+                &:before {
+                    @extend .materialIcons;
+                    content: 'location_on';
+                }
+            }
+            &:before {
+                padding: 12px;
+                border-radius: 50%;
+                border: 1px solid #55228a;
+                position: absolute;
+                left: 0;
+                transform: translateX(-50%);
+                background: #fff;
+            }
+            &#tipo {
+                p {
+                    margin: 0;
+                    margin-top: 15px;
+                }
+                &:before {
+                    @extend .materialIcons;
+                    content: 'priority_high';
+                }
+            }
+            &#imobiliaria {
+                &:before {
+                    @extend .materialIconsOutlined;
+                    content: 'find_in_page';
+                }
+            }
+            &#novaimobiliaria {
+                &:before {
+                    @extend .materialIcons;
+                    content: 'location_city';
+                }
+            }
+            &#gestor {
+                &:before {
+                    @extend .materialIconsOutlined;
+                    content: 'contact_support';
+                }
+            }
+        }
+        .radio-button-group {
+            .radio-button {
+                label {
+                    padding: 0px;
+                    border: 1px solid #a5acb4;
+                    background-color: #fff;
+                    font-size: 14px;
+                    color: #7c8793;
+                    width: 100%;
+                    border-radius: 6px;
+                }
+                input[type="radio"]:checked+label {
+                    background-color: rgba(109, 48, 171, 0.07);
+                    border: 1px solid #6d30ab;
+                    color: #6d30ab;
+                }
+                input[type="radio"].invalid {
+                    &~.helper-text {
+                        position: relative;
+                        min-height: 18px;
+                        display: block;
+                        font-size: 12px;
+                        color: rgba(0, 0, 0, 0.54);
+                        margin-top: 5px;
+                        margin-left: 5px;
+                        &:after {
+                            content: attr(data-error);
+                            color: #F44336;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
